@@ -2,7 +2,7 @@
 
 ## Live Link
 
-This project is deployed at [this Netlify Link](https://github.com/facebook/create-react-app).
+This project is deployed at [this Netlify Link](https://employeeto.netlify.app/).
 
 Can also Git Clone-
 
