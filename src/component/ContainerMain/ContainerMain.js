@@ -34,12 +34,12 @@ const ContainerMain = () => {
           for any job, Online{" "}
         </h2>
         <h3>
-          <small>See the best pros for your job</small>{" "}
+          <small>See the best pros for your job / project</small>{" "}
         </h3>
         <p>Work with the world’s best talent on Employee.To </p>
         <h3>
-          Clients rate Virtual Assistants in Bangladesh 4.7 / 5 on average from
-          5,460 reviews
+          Total clients reviews of Virtual Assistants : <strong>5,460</strong>{" "}
+          with average rating of <strong>4.7</strong> out of <strong>5</strong>.
         </h3>
       </div>
       <div className="row mx-3">
