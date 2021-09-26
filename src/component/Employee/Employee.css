@@ -1,0 +1,59 @@
+.card-style {
+  background-color: #fff2f5;
+  position: relative;
+  border-radius: 15px;
+}
+
+.icon-hover {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: #ee2d8d;
+}
+.icon-color {
+  color: #ee2d8d;
+}
+
+.avatar-container p {
+  font-size: 1.3rem;
+}
+
+.text-align {
+  line-height: 10px;
+  margin: auto;
+  padding-left: 5px;
+}
+
+.btn-style {
+  width: 160px;
+
+  line-height: 36px;
+  letter-spacing: 0.6px;
+  border-radius: 15px;
+
+  background-color: #493843;
+  color: #cbbfbb;
+  font-size: 1.3rem;
+}
+
+.btn-container {
+  display: flex;
+  padding: 5px;
+  justify-content: space-around;
+  border-top: 10px solid #ffb7c7;
+}
+.btn-container a {
+  margin-top: 5px;
+}
+.btn-group button:hover {
+  background-color: #900020 !important;
+}
+
+.skill-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+.skill-group li {
+  list-style: none;
+  padding: 5px;
+}

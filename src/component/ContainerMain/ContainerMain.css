@@ -1,0 +1,24 @@
+.hero-container {
+  background-color: #3b0404;
+  color: #fff;
+  margin: auto;
+  margin-top: 20px;
+  width: 70%;
+  border-radius: 10px;
+  padding: 5px;
+}
+.hero-title {
+  color: #ffffff;
+}
+.hero-title em {
+  color: #f72a85;
+}
+
+.container-employee {
+  border: 1px solid #f72a85;
+  margin-top: 10px;
+}
+.container-cart {
+  border: 1px dotted #f72a85;
+  margin-top: 10px;
+}

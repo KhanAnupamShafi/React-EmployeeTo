@@ -1,0 +1,102 @@
+[
+  {
+    "index": 1,
+    "isActive": true,
+    "salary": "1,966.57",
+    "experience": 3,
+    "rating": 4.5,
+    "feedback": 38,
+    "picture": "https://i.ibb.co/9T9Wgm5/image-3.jpg",
+    "age": 27,
+    "name": "Cooper Thomas",
+    "gender": "male",
+    "company": "FANGOLD",
+    "email": "cooperthomas@fangold.com",
+    "phone": "+1 (953) 587-3844",
+    "address": "Sierra Leone, Esmont",
+    "about": "Officia sint sit amet Lorem. Anim nulla id laborum velit consequat. Enim duis enim magna ex eu laboris. Culpa occaecat dolore magna quis pariatur pariatur ipsum consectetur veniam laborum do dolore pariatur. Ipsum elit elit tempor veniam. Mollit id nulla velit cillum nisi.\r\n",
+    "registered": "2021-04-20",
+    "appliedrole": "Data Analyst",
+    "skills": [
+      "Data Analyst",
+      "Virtual Assistant",
+      "Microsoft Excel",
+      "Administrative Support"
+    ]
+  },
+  {
+    "index": 2,
+    "isActive": true,
+    "salary": "3,887.46",
+    "experience": 4,
+    "rating": 4.8,
+    "feedback": 30,
+    "picture": "https://i.ibb.co/TwGyt2W/image-4.jpg",
+    "age": 32,
+    "name": "Whitley Spence",
+    "gender": "male",
+    "company": "XEREX",
+    "email": "whitleyspence@xerex.com",
+    "phone": "+1 (889) 523-3641",
+    "address": "Singapore, Aberdeen",
+    "about": "Et amet aliqua laborum sint duis. Mollit adipisicing ea ipsum mollit mollit esse veniam occaecat esse. Dolor proident labore incididunt qui Lorem duis et anim. Exercitation amet enim laborum voluptate aliqua reprehenderit cillum in occaecat elit ea esse est.\r\n",
+    "registered": "2015-09-22",
+    "appliedrole": "Data Analyst",
+    "skills": [
+      "Data Analyst",
+      "Virtual Assistant",
+      "Microsoft Excel",
+      "Administrative Support"
+    ]
+  },
+  {
+    "index": 3,
+    "isActive": true,
+    "salary": "1,704.87",
+    "experience": 3,
+    "rating": 3.5,
+    "feedback": 41,
+    "picture": "https://i.ibb.co/3mDNMb6/image-2.jpg",
+    "age": 31,
+    "name": "Valentine Webster",
+    "gender": "female",
+    "company": "GYNKO",
+    "email": "valentinewebster@gynko.com",
+    "phone": "+1 (941) 461-3708",
+    "address": "Gambia, Orason",
+    "about": "Velit ad qui reprehenderit aute et velit laboris. Incididunt sint enim magna adipisicing id ea culpa aute. Adipisicing voluptate nulla magna cillum quis voluptate incididunt est non pariatur exercitation cillum ullamco. Dolore voluptate in elit officia aute aliquip. Irure Lorem commodo mollit dolor minim. Lorem duis fugiat officia tempor culpa ad anim tempor do.\r\n",
+    "registered": "2016-12-20",
+    "appliedrole": "WordPress Developer",
+    "skills": [
+      "Data Analyst",
+      "Virtual Assistant",
+      "Microsoft Excel",
+      "Administrative Support"
+    ]
+  },
+  {
+    "index": 4,
+    "isActive": true,
+    "salary": "3,389.75",
+    "experience": 5,
+    "rating": 3.6,
+    "feedback": 12,
+    "picture": "https://i.ibb.co/tLbB48V/image-1.jpg",
+    "age": 33,
+    "name": "Bradshaw Bishop",
+    "gender": "male",
+    "company": "ENTROPIX",
+    "email": "bradshawbishop@entropix.com",
+    "phone": "+1 (845) 454-2265",
+    "address": "British Indian Ocean Territory, Bentley",
+    "about": "Nulla eu ea anim elit commodo aute et nulla anim adipisicing aute. Ad fugiat culpa tempor aute. Magna duis officia esse deserunt excepteur tempor eu velit ut irure mollit elit.\r\n",
+    "registered": "2017-04-13",
+    "appliedrole": "WordPress Developer",
+    "skills": [
+      "Data Analyst",
+      "Virtual Assistant",
+      "Microsoft Excel",
+      "Administrative Support"
+    ]
+  }
+]
