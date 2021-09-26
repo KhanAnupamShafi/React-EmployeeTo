@@ -1,0 +1,12 @@
+.staff-list {
+  list-style: none;
+}
+
+.staff-bar {
+  justify-content: center;
+  align-items: center;
+}
+
+.text-bold {
+  font-size: 1.1em;
+}

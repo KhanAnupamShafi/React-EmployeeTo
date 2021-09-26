@@ -3,6 +3,7 @@ import "./Employee.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowUp,
+  faCheckDouble,
   faDollarSign,
   faMapMarker,
   faStar,
@@ -26,15 +27,21 @@ const Employee = (props) => {
     address,
     salary,
     skills,
+    isAdded,
   } = props.person;
+  console.log(isAdded);
+  const { handleClickEvent } = props;
 
   //font-awesome
   const userIcon = <FontAwesomeIcon icon={faUser} size="lg" />;
-  const starIcon = <FontAwesomeIcon className="icon-color" icon={faStar} />;
-  const mapIcon = <FontAwesomeIcon className="icon-color" icon={faMapMarker} />;
+  const starIcon = <FontAwesomeIcon className="icon-color-alt" icon={faStar} />;
+  const mapIcon = (
+    <FontAwesomeIcon className="icon-color-alt" icon={faMapMarker} />
+  );
   const arrowicon = <FontAwesomeIcon icon={faArrowUp} />;
+  const checkIcon = <FontAwesomeIcon icon={faCheckDouble} />;
   const dollarIcon = (
-    <FontAwesomeIcon className="icon-color" icon={faDollarSign} />
+    <FontAwesomeIcon className="icon-color-alt" icon={faDollarSign} />
   );
   const fbIcon = (
     <FontAwesomeIcon className="icon-color" icon={faFacebook} size="lg" />
@@ -49,7 +56,6 @@ const Employee = (props) => {
     <FontAwesomeIcon className="icon-color" icon={faGooglePlusG} size="lg" />
   );
 
-  console.log("from employee", props.picture);
   return (
     <div className="col-md-4 p-3  ">
       <div className="card-tile card-style card">
@@ -58,7 +64,7 @@ const Employee = (props) => {
         </a>
         <div className="text-center ">
           <div className="avatar-container">
-            <figure>
+            <figure className="mt-3">
               <img
                 style={{
                   borderRadius: "50%",
@@ -78,7 +84,7 @@ const Employee = (props) => {
 
             <div className="text-align text-center">
               <p>
-                {dollarIcon} {salary}
+                {dollarIcon} {salary} /month
               </p>
               <p>
                 {starIcon} {rating}/5 ({feedback} reviews)
@@ -92,7 +98,7 @@ const Employee = (props) => {
 
           <ul className="skill-group">
             {skills.map((skill) => (
-              <li className="me-3 mb-3 bg-white rounded-pill" key={skill}>
+              <li className="me-2 mb-2 bg-white rounded-pill" key={skill}>
                 {skill}
               </li>
             ))}
@@ -103,7 +109,18 @@ const Employee = (props) => {
           <a href="./gmail">{gmailIcon}</a>
           <a href="./linkedin">{linkedinIcon}</a>
           <a href="./github">{gitIcon}</a>
-          <button className="btn-style">{arrowicon} Hire Now</button>
+          {isAdded ? (
+            <button className="btn-style-disabled" disabled>
+              <span>{checkIcon} Already hired</span>
+            </button>
+          ) : (
+            <button
+              onClick={() => handleClickEvent(props.person)}
+              className="btn-style"
+            >
+              <span>{arrowicon} Hire Now</span>
+            </button>
+          )}
         </div>
       </div>
     </div>

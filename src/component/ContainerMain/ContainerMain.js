@@ -1,16 +1,26 @@
 import React, { useEffect, useState } from "react";
 import Employee from "../Employee/Employee";
+import Recruit from "../Recruits/Recruit";
 import "./ContainerMain.css";
 
 const ContainerMain = () => {
   const [data, setData] = useState([]);
-  console.log(data);
+  const [staffs, setStaffs] = useState([]);
+
   useEffect(() => {
     fetch("./fakeData.JSON")
       .then((res) => res.json())
       .then((data) => setData(data));
   }, []);
 
+  const handleClickEvent = (person) => {
+    person.isAdded = "false";
+    const newPerson = [...staffs, person];
+
+    setStaffs(newPerson);
+  };
+
+  console.log(staffs);
   return (
     <div>
       <div className="hero-container">
@@ -33,12 +43,16 @@ const ContainerMain = () => {
         <div className="col-md-9 container-employee">
           <div className="row ">
             {data.map((person) => (
-              <Employee key={person.index} person={person}></Employee>
+              <Employee
+                key={person.index}
+                person={person}
+                handleClickEvent={handleClickEvent}
+              ></Employee>
             ))}
           </div>
         </div>
         <div className="col-md-3 container-cart">
-          <h2>Cart</h2>
+          <Recruit hired={staffs}></Recruit>
         </div>
       </div>
     </div>
