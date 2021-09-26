@@ -1,4 +1,5 @@
 import React from "react";
+import { CloseButton } from "react-bootstrap";
 import "./Recruit.css";
 
 const Recruit = (props) => {
@@ -8,14 +9,14 @@ const Recruit = (props) => {
   }, 0);
 
   return (
-    <div>
-      <div>
+    <div className="container p-0 bg-container sticky-top">
+      <div className="text-white">
         <h1>Staff Info</h1>
-        <h4>Total hires: {props.hired.length}</h4>
-        <h4>Total monthly costs: ${totalPrice.toFixed(2)}</h4>
+        <h4>Total hired: {props.hired.length}</h4>
+        <h4>Total monthly cost: ${totalPrice.toFixed(2)}</h4>
       </div>
 
-      <div className="staff-container">
+      <div className="my-4 staff-container">
         <ul className="staff-list">
           {props.hired.map((staff) => (
             <div key={staff.index} className="row staff-bar p-2 bd-highlight">
@@ -26,6 +27,7 @@ const Recruit = (props) => {
                   alt=""
                 />
               </div>
+
               <li className="col-md-6 m-2">
                 <h5 className="text-bold">
                   {staff.name}{" "}
@@ -37,6 +39,7 @@ const Recruit = (props) => {
                   </span>
                 </h5>
               </li>
+              <CloseButton className="ms-5" />
             </div>
           ))}
         </ul>

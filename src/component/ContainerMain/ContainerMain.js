@@ -39,7 +39,7 @@ const ContainerMain = () => {
           5,460 reviews
         </h3>
       </div>
-      <div className="row ms-3">
+      <div className="row mx-3">
         <div className="col-md-9 container-employee">
           <div className="row ">
             {data.map((person) => (

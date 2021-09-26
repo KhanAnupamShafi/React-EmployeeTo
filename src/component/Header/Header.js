@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <div>
       <>
-        <Navbar style={{ backgroundColor: "#551717" }}>
+        <Navbar style={{ backgroundColor: "#6F1425" }}>
           <Container>
             <Navbar.Brand href="#home">
               <img
