@@ -4,7 +4,9 @@ import Recruit from "../Recruits/Recruit";
 import "./ContainerMain.css";
 
 const ContainerMain = () => {
+  //store api data
   const [data, setData] = useState([]);
+  //store hired staff data
   const [staffs, setStaffs] = useState([]);
 
   useEffect(() => {
@@ -13,10 +15,11 @@ const ContainerMain = () => {
       .then((data) => setData(data));
   }, []);
 
+  //Handle hire button click event
   const handleClickEvent = (person) => {
     person.isAdded = "false";
     const newPerson = [...staffs, person];
-
+    //update staff
     setStaffs(newPerson);
   };
 
